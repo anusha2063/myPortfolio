@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anusha khatiwada</title>
+    <link rel="icon" href="photos/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="cv.css">
+     
+</head>
+<body>
+    <div class="container">
+        <div id="text"></div>
+
+        <div class="introduction">
+           
+            <script>
+                let phrases = [
+                  "Hello Everyone👋 !!",
+                ];
+              
+                let currentPhrase = 0;
+                let i = 0;
+                let speed = 100;
+              
+                function typeWriter() {
+                  if (i < phrases[currentPhrase].length) {
+                    document.getElementById("text").innerHTML += phrases[currentPhrase].charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                  } else {
+                    setTimeout(eraseText, 1000); // Pause before erasing
+                  }
+                }
+              
+                function eraseText() {
+                  let currentText = document.getElementById("text").innerHTML;
+                  if (currentText.length > 0) {
+                    document.getElementById("text").innerHTML = currentText.slice(0, -1);
+                    setTimeout(eraseText, 50);
+                  } else {
+                    currentPhrase = (currentPhrase + 1) % phrases.length; // Loop through phrases
+                    i = 0;
+                    setTimeout(typeWriter, 500); // Pause before typing next phrase
+                  }
+                }
+              
+                window.onload = typeWriter;
+              </script>
+              
+            <div class="left">
+                <h3 style="font-family: monospace;"><center>I am..</center></h3>
+                <h1 class="cen">Anusha<span class="cast">Khatiwada</span></h1>
+                <p><center>Developer | learner </center></p>
+                <h3>About me :)</h3>
+                <p> I love frontend development and enjoy creating user-friendly web applications. I focus on writing clean and efficient code while constantly learning new technologies. In my free time, I like experimenting with code and exploring new frameworks to improve my skills.</p>
+                <p>
+                    <style>
+                        button{
+                            padding: 5px;
+                            border: none;
+                            margin: 10px;
+                            font-size: 15px;
+                            border-radius: 10%;
+                            background-color: rgba(0, 173, 173, 0.253);
+                        }
+                        button:hover{
+                            color:black;
+                            background-color:rgba(127, 255, 212, 0.499);
+                            margin-top: 10px;
+                            border-bottom: 3px solid #ff0000;
+                        }
+                    </style>
+                    <button>5'0' </button>
+                    <button>A +ve</button>
+                    <button>2006</button>
+                </p>
+            </div>
+            <div class="right">
+                <img src="photos/anusha.jpg" alt="Anusha Khatiwada">
+            </div>
+        </div>
+
+        <div class="section skills">
+            <h1>Skills</h1>
+            <h3>Programming Languages</h3>
+            <p>JavaScript, C, ,Java (Basic),</p>
+            <h3>Tools</h3>
+            <p>Git, GitHub</p>
+            <!-- <h3>Frameworks</h3>
+            <p>learning</p> -->
+        </div>
+
+        <div class="section education">
+            <h1>Education</h1>
+            <p><b>Bachelor of Computer Application (BCA) </b> Mechi Multiple Campus ➡️ 2023 A.D - Present</p>
+            <p><b>Higher Secondary School</b> Pragyan Academy ➡️2022 A.D</p>
+            <p><b>Secondary Education Examination</b> HolyLand English School ➡️ 2019 A.D</p>
+
+        </div>
+
+        <div class="section projects">
+            <h1>Projects</h1>
+            <ul>
+                
+                <li><a href="https://rock-paper-scissor-delta-rust.vercel.app/" target="_blank">Rock-Paper-Scissors </a></li>
+                <li><a href="https://rock-paper-scissor-delta-rust.vercel.app/">Rock-Paper-Scissors </a></li>
+            </ul>
+        </div>
+
+        <div class="section social">
+            <h1>Social Media</h1>
+            <ul>
+                <li><a href="https://www.facebook.com/kanusha2063">Facebook</a></li>
+                <li><a href="https://github.com/anusha2063">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/anusha-khatiwada-3a00ab2b9/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BQJbHU9tUSKCJtszVxgSAow%3D%3D">linkedIn</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="section contact">
+            <h1>Contact</h1>
+            <p>Email <a href="mailto:kanusha2063@gmail.com">kanusha2063@gmail.com</a></p>
+        </div>
+        <div>
+            <style>
+                .last{
+                    color: rgba(0, 0, 0, 0.086);
+                }
+            </style>
+            <p class="last">&copy; 2025 Anusha Khatiwada| All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>
